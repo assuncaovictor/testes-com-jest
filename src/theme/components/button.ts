@@ -9,9 +9,19 @@ const button: Theme = {
 					border: "2px solid #000000",
 					borderRadius: 99999,
 					boxShadow: "2px 2px 0px #000000",
+					height: 56,
+					textTransform: "none",
 
 					":hover": {
 						backgroundColor: theme.palette.primary.main,
+					},
+
+					":disabled": {
+						boxShadow: "2px 2px 0px #000000",
+					},
+
+					[theme.breakpoints.down("md")]: {
+						maxWidth: 155,
 					},
 				}),
 			},

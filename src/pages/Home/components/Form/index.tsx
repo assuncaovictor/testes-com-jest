@@ -1,6 +1,8 @@
+import { Stack, TextField } from "@mui/material";
 import React from "react";
 import { useAddParticipant } from "../../state/hooks/useAddParticipant";
 import { useErrorMessage } from "../../state/hooks/useErrorMessage";
+import { Button } from "./style";
 
 const Form = () => {
 	const [name, setName] = React.useState("");
@@ -19,20 +21,22 @@ const Form = () => {
 	};
 
 	return (
-		<form onSubmit={handleSubmit}>
-			<input
+		<Stack component="form" onSubmit={handleSubmit} direction="row" width="100%" alignItems="flex-start">
+			<TextField
 				type="text"
 				placeholder="Insira os nomes dos participantes"
 				value={name}
 				onChange={(e) => setName(e.target.value)}
-				ref={inputRef}
+				inputRef={inputRef}
+				color="secondary"
+				error={errorMessage.length > 0}
+				helperText={errorMessage}
 			/>
-			<button disabled={!name} type="submit">
-				Adicionar
-			</button>
 
-			{errorMessage && <p role="alert">{errorMessage}</p>}
-		</form>
+			<Button disabled={!name} type="submit" variant="contained">
+				Adicionar
+			</Button>
+		</Stack>
 	);
 };
 
