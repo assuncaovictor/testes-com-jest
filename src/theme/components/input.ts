@@ -2,6 +2,14 @@ import { Theme } from "@mui/material";
 
 const input: Theme = {
 	components: {
+		MuiInputBase: {
+			styleOverrides: {
+				input: {
+					paddingLeft: "16px !important",
+				},
+			},
+		},
+
 		MuiOutlinedInput: {
 			styleOverrides: {
 				root: {

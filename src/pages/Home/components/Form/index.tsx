@@ -1,4 +1,5 @@
-import { Stack, TextField } from "@mui/material";
+import { Stack, TextField, InputAdornment } from "@mui/material";
+import { UserPlus } from "phosphor-react";
 import React from "react";
 import { useAddParticipant } from "../../state/hooks/useAddParticipant";
 import { useErrorMessage } from "../../state/hooks/useErrorMessage";
@@ -32,6 +33,13 @@ const Form = () => {
 				error={errorMessage.length > 0}
 				helperText={errorMessage}
 				FormHelperTextProps={{ role: "alert" }}
+				InputProps={{
+					startAdornment: (
+						<InputAdornment position="start">
+							<UserPlus size={24} />
+						</InputAdornment>
+					),
+				}}
 			/>
 
 			<Button disabled={!name} type="submit" variant="contained">
