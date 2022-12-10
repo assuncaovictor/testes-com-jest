@@ -2,14 +2,14 @@ import { fireEvent, render, screen } from "@testing-library/react";
 import React from "react";
 import Form from ".";
 import { act } from "react-dom/test-utils";
-import ModelTest from "../../../../tests/Model";
+import { RecoilRoot } from "recoil";
 
 describe("Comportamento do Form", () => {
 	test("Quando o input está vazio, novos participantes não podem ser adicionados", () => {
 		render(
-			<ModelTest>
+			<RecoilRoot>
 				<Form />
-			</ModelTest>
+			</RecoilRoot>
 		);
 
 		const input = screen.getByPlaceholderText("Insira os nomes dos participantes");
@@ -21,9 +21,9 @@ describe("Comportamento do Form", () => {
 
 	test("Adicionar um participante caso exista um nome preenchido", () => {
 		render(
-			<ModelTest>
+			<RecoilRoot>
 				<Form />
-			</ModelTest>
+			</RecoilRoot>
 		);
 
 		const input = screen.getByPlaceholderText("Insira os nomes dos participantes");
@@ -48,9 +48,9 @@ describe("Comportamento do Form", () => {
 
 	test("Nomes duplicados não podem ser adicionados na lista", () => {
 		render(
-			<ModelTest>
+			<RecoilRoot>
 				<Form />
-			</ModelTest>
+			</RecoilRoot>
 		);
 
 		const input = screen.getByPlaceholderText("Insira os nomes dos participantes");
@@ -79,9 +79,9 @@ describe("Comportamento do Form", () => {
 		jest.useFakeTimers();
 
 		render(
-			<ModelTest>
+			<RecoilRoot>
 				<Form />
-			</ModelTest>
+			</RecoilRoot>
 		);
 
 		const input = screen.getByPlaceholderText("Insira os nomes dos participantes");

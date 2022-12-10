@@ -31,6 +31,7 @@ const Form = () => {
 				color="secondary"
 				error={errorMessage.length > 0}
 				helperText={errorMessage}
+				FormHelperTextProps={{ role: "alert" }}
 			/>
 
 			<Button disabled={!name} type="submit" variant="contained">

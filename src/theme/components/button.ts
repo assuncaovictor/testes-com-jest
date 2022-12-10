@@ -9,6 +9,7 @@ const button: Theme = {
 					border: "2px solid #000000",
 					borderRadius: 99999,
 					boxShadow: "2px 2px 0px #000000",
+					fontWeight: 600,
 					height: 56,
 					textTransform: "none",
 

@@ -5,6 +5,7 @@ import palette from "./palette";
 import button from "./components/button";
 import container from "./components/container";
 import input from "./components/input";
+import list from "./components/list";
 import typography from "./components/typography";
 
 const theme = createTheme({
@@ -12,6 +13,7 @@ const theme = createTheme({
 		...button,
 		...container,
 		...input,
+		...list,
 		...typography,
 	},
 

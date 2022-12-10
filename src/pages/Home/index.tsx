@@ -1,23 +1,22 @@
 import React from "react";
+import Footer from "./components/Footer";
 import Form from "./components/Form";
+import List from "./components/List";
+
 import Typography from "@mui/material/Typography";
-import { Stack, Button } from "@mui/material";
-import { PlayCircle } from "phosphor-react";
+import { Stack } from "@mui/material";
 
 const Home = () => {
 	return (
-		<>
+		<Stack my={8} gap={4}>
 			<Typography color="primary" variant="h1">
 				Vamos começar!
 			</Typography>
-			<Form />
 
-			<Stack>
-				<Button startIcon={<PlayCircle size={24} weight="bold" color="#fff" />} variant="contained">
-					Iniciar Brincadeira
-				</Button>
-			</Stack>
-		</>
+			<Form />
+			<List />
+			<Footer />
+		</Stack>
 	);
 };
 
