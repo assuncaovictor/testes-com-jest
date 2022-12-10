@@ -1,0 +1,171 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`A página de home deve ser renderizada corretamente 1`] = `
+<div>
+  <div
+    class="css-272qit-MuiStack-root"
+  >
+    <h1
+      class="MuiTypography-root MuiTypography-h1 css-utprum-MuiTypography-root"
+    >
+      Vamos começar!
+    </h1>
+    <form
+      class="css-10f8td0-MuiStack-root"
+    >
+      <div
+        class="MuiFormControl-root MuiTextField-root css-1u3bzj6-MuiFormControl-root-MuiTextField-root"
+      >
+        <div
+          class="MuiInputBase-root MuiOutlinedInput-root MuiInputBase-colorSecondary MuiInputBase-formControl MuiInputBase-adornedStart css-1hg4bil-MuiInputBase-root-MuiOutlinedInput-root"
+        >
+          <div
+            class="MuiInputAdornment-root MuiInputAdornment-positionStart MuiInputAdornment-outlined MuiInputAdornment-sizeMedium css-ittuaa-MuiInputAdornment-root"
+          >
+            <span
+              class="notranslate"
+            >
+              ​
+            </span>
+            <svg
+              fill="currentColor"
+              height="24"
+              viewBox="0 0 256 256"
+              width="24"
+              xmlns="http://www.w3.org/2000/svg"
+            >
+              <rect
+                fill="none"
+                height="256"
+                width="256"
+              />
+              <line
+                fill="none"
+                stroke="currentColor"
+                stroke-linecap="round"
+                stroke-linejoin="round"
+                stroke-width="16"
+                x1="200"
+                x2="248"
+                y1="136"
+                y2="136"
+              />
+              <line
+                fill="none"
+                stroke="currentColor"
+                stroke-linecap="round"
+                stroke-linejoin="round"
+                stroke-width="16"
+                x1="224"
+                x2="224"
+                y1="112"
+                y2="160"
+              />
+              <circle
+                cx="108"
+                cy="100"
+                fill="none"
+                r="60"
+                stroke="currentColor"
+                stroke-miterlimit="10"
+                stroke-width="16"
+              />
+              <path
+                d="M22.2,200a112,112,0,0,1,171.6,0"
+                fill="none"
+                stroke="currentColor"
+                stroke-linecap="round"
+                stroke-linejoin="round"
+                stroke-width="16"
+              />
+            </svg>
+          </div>
+          <input
+            aria-invalid="false"
+            class="MuiInputBase-input MuiOutlinedInput-input MuiInputBase-inputAdornedStart css-1o9s3wi-MuiInputBase-input-MuiOutlinedInput-input"
+            id=":r0:"
+            placeholder="Insira os nomes dos participantes"
+            type="text"
+            value=""
+          />
+          <fieldset
+            aria-hidden="true"
+            class="MuiOutlinedInput-notchedOutline css-1d3z3hw-MuiOutlinedInput-notchedOutline"
+          >
+            <legend
+              class="css-ihdtdm"
+            >
+              <span
+                class="notranslate"
+              >
+                ​
+              </span>
+            </legend>
+          </fieldset>
+        </div>
+      </div>
+      <button
+        class="MuiButtonBase-root MuiButton-root MuiButton-contained MuiButton-containedPrimary MuiButton-sizeMedium MuiButton-containedSizeMedium Mui-disabled MuiButton-root MuiButton-contained MuiButton-containedPrimary MuiButton-sizeMedium MuiButton-containedSizeMedium css-1868jvy-MuiButtonBase-root-MuiButton-root"
+        disabled=""
+        tabindex="-1"
+        type="submit"
+      >
+        Adicionar
+      </button>
+    </form>
+    <ul
+      class="MuiList-root MuiList-padding css-h4y409-MuiList-root"
+    />
+    <div
+      class="css-1jv2z0n-MuiStack-root"
+    >
+      <button
+        class="MuiButtonBase-root MuiButton-root MuiButton-contained MuiButton-containedPrimary MuiButton-sizeMedium MuiButton-containedSizeMedium Mui-disabled MuiButton-root MuiButton-contained MuiButton-containedPrimary MuiButton-sizeMedium MuiButton-containedSizeMedium css-1t0onhf-MuiButtonBase-root-MuiButton-root"
+        disabled=""
+        tabindex="-1"
+        type="button"
+      >
+        <span
+          class="MuiButton-startIcon MuiButton-iconSizeMedium css-1d6wzja-MuiButton-startIcon"
+        >
+          <svg
+            fill="#fff"
+            height="24"
+            viewBox="0 0 256 256"
+            width="24"
+            xmlns="http://www.w3.org/2000/svg"
+          >
+            <rect
+              fill="none"
+              height="256"
+              width="256"
+            />
+            <circle
+              cx="128"
+              cy="128"
+              fill="none"
+              r="96"
+              stroke="#fff"
+              stroke-linecap="round"
+              stroke-linejoin="round"
+              stroke-width="24"
+            />
+            <polygon
+              points="156 128 116 100 116 156 156 128"
+              stroke="#fff"
+              stroke-linecap="round"
+              stroke-linejoin="round"
+              stroke-width="24"
+            />
+          </svg>
+        </span>
+        Iniciar brincadeira
+      </button>
+      <img
+        class="MuiBox-root css-0"
+        src="sacolas.png"
+      />
+    </div>
+  </div>
+</div>
+`;

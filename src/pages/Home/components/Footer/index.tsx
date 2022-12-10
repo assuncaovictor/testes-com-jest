@@ -6,15 +6,21 @@ import { PlayCircle } from "phosphor-react";
 import { useParticipantsList } from "../../state/hooks/useParticipantsList";
 
 import sacolas from "../../../../assets/img/sacolas.png";
+import { useNavigate } from "react-router-dom";
 
 const Footer = () => {
 	const names = useParticipantsList();
+	const navigate = useNavigate();
+
+	const handleNavigate = () => {
+		navigate("/sort");
+	};
+
 	return (
 		<Stack direction="row" alignItems="center" justifyContent="space-between">
 			<Button
-				// component={Link}
+				onClick={handleNavigate}
 				disabled={names.length < 3}
-				// to="/sort"
 				startIcon={<PlayCircle size={24} weight="bold" color="#fff" />}
 				variant="contained"
 				sx={{ width: 250 }}
